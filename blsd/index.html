@@ -1,0 +1,576 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/js.js"></script>
+<meta name="viewport" content=
+"width=device-width,initial-scale=1,user-scalable=no" />
+<link rel="shortcut icon" href="img/shilips.ico" />
+<link rel="stylesheet" href="css/inde.css" />
+<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+<title>首页</title>
+</head>
+<style>
+		canvas {
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+		}
+		
+		.a1 {
+			background: url(img/index/1.jpg)no-repeat 0px 0px;
+			background-size: cover;
+			min-height: 300px;
+		}
+		
+		.a2 {
+			background: url(img/index/2.jpg) no-repeat 0px 0px;
+			background-size: cover;
+			min-height: 300px;
+		}
+		
+		.a3 {
+			background: url(img/index/4.jpg) no-repeat 0px 0px;
+			background-size: cover;
+			min-height: 300px;
+		}
+		
+		.a4 {
+			background: url(img/index/b2.jpg) no-repeat 0px 0px;
+			background-size: cover;
+			min-height: 300px;
+		}
+		
+		.wnd h3 {
+			color: #fff;
+			font-size: 3.5em;
+			padding: 4em 0 0 1em;
+			font-weight: 600;
+			transition: 0.5s all;
+			-webkit-transition: 0.5s all;
+			-moz-transition: 0.5s all;
+			-o-transition: 0.5s all;
+			-ms-transition: 0.5s all;
+		}
+		
+		.wnd p {
+			color: #fff;
+			font-size: 1.1em;
+			width: 87%;
+			padding: 0.5em 0 1em 3.5em;
+			font-weight: 600;
+		}
+		
+		.tu.tu img {
+			cursor: pointer;
+			transition: all 0.3s;
+		}
+		
+		.tu.tu img:hover {
+			transform: scale(1.1);
+		}
+		
+		.lu {}
+		
+		.nn article .lu :hover {
+			background-color: #CCCCCC;
+		}
+	</style>
+<body>
+<div class="wrap">
+<!--nav-->
+ <!--导航开始-->
+		<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+  <span class="sr-only">Toggle navigation</span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  </button>
+					<a class="navbar-brand" href="/index">BAI LU</a>
+				</div>
+
+				<!-- 左上角的导航 -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="index.html">首页<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">我们<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+		               <li><a href="#">支持主页</a></li>
+		               <li><a href="#">查找产品</a></li>
+		               <li><a href="#">查找客服中心</a></li>
+		               <li><a href="#">联系我们</a></li>
+		               <li><a href="#">购买附件</a></li>
+		             </ul>
+						</li>
+						<li data-toggle="modal" data-target="#about">
+							<a href="guanyu.html">关于</a>
+						</li>
+						<li data-toggle="modal" data-target="#about">
+							<a href="#">开发者中心</a>
+						</li>
+						<li data-toggle="modal" data-target="#about">
+							<a href="canpin.html">产品</a>
+						</li>
+						<li data-toggle="modal" data-target="#about">
+							<a href="wei.html">友情链接</a>
+						</li>
+					</ul>
+
+					<form class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="搜索..">
+							
+						</div>
+					</form>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li data-toggle="modal" data-target="#signin-signup-tab" id="signin-button">
+							<a href="log.html">登陆</a>
+						</li>
+						<li data-toggle="modal" data-target="#signin-signup-tab" id="signup-button">
+							<a href="reg.html">注册</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--导航结束-->
+
+<!--theme1-->
+ <div class="theme1 hidden-sm hidden-xs">
+  <div class="theme1-text">
+   <h1>200000万HTML5游戏开发者的选择</h1>
+   <p>效率至上的一站式完整开发工作流</p>
+   <p> 2D/3D双核心渲染，开发工具链闭环整合，全流程开发，由此开始
+</p>
+   <div class="more">
+    下载白鹭
+   </div>
+  </div>
+ </div>
+<!--主题二移动端-->
+ <div class="theme1-m hidden-lg hidden-md">
+  <div class="theme1-text-m">
+   <img src="img/li-l.jpg">
+  <h1>200000万HTML5游戏开发者的选择</h1>
+   <p>效率至上的一站式完整开发工作流</p>
+   <p> 2D/3D双核心渲染，开发工具链闭环整合，全流程开发，由此开始
+</p>
+   <div class="more-m">
+      下载白鹭
+   </div>
+  </div>
+ </div>
+<!--..........白鹭时代。。。。。。。。。。。。。-->
+		<div class="gtco-section border-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+						<h2 style="margin-top: 60px;">BAI LU SHI DAI</h2>
+						<p class="text-muted">Dignissimos asperiores vitae velit veniam totam alias autem provident. </p>
+					</div>
+				</div>
+				<div class="row">
+					<!--第一个-->
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<div style="border: 1px #cccccc solid;border-radius: 10px;margin-top: 10px;">
+							<a href="img/index/img_2.jpg" class="fh5co-project-item image-popup" style="text-decoration: none;">
+								<figure>
+									<div class="overlay"><i class="ti-plus"></i></div>
+									<div class="tu">
+										<img src="img/index/img_2.jpg" alt="Image" class="img-responsive" style="border-radius: 10px;">
+									</div>
+								</figure>
+
+								<div class="text-center">
+									<h2 class="text-danger" style="margin-top:20px; ">Integrity </h2>
+									<p style="margin-bottom:20px;">Integrity is our basis in the market competition, because integritysin tegritys</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!--第一个介绍-->
+					<!--第二个-->
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<div style="border: 1px #cccccc solid;border-radius: 10px;margin-top: 10px;">
+							<a href="img/index/img_4.jpg" class="fh5co-project-item image-popup" style="text-decoration: none;">
+								<figure>
+									<div class="overlay"><i class="ti-plus"></i></div>
+									<div class="tu">
+										<img src="img/index/img_4.jpg" alt="Image" class="img-responsive" style="border-radius: 10px;">
+									</div>
+								</figure>
+
+								<div class="text-center">
+									<h2 class="text-danger" style="margin-top:20px; "> Particularity</h2>
+									<p style="margin-bottom:20px;">Only with careful work can we have the opportunity to complete a quality project</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!--第二个介绍-->
+
+					<!--第三个-->
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<div style="border: 1px #cccccc solid;border-radius: 10px;margin-top: 10px;">
+							<a href="img/index/img_6.jpg" class="fh5co-project-item image-popup" style="text-decoration: none;">
+								<figure>
+									<div class="overlay"><i class="ti-plus"></i></div>
+									<div class="tu">
+										<img src="img/index/img_6.jpg" alt="Image" class="img-responsive" style="border-radius: 10px;">
+									</div>
+								</figure>
+
+								<div class="text-center">
+									<h2 class="text-danger" style="margin-top:20px; ">Creat Value</h2>
+									<p style="margin-bottom:20px;">We are committed to creating value for our customers even in the face of great challenges</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!--第三个介绍-->
+
+				</div>
+			</div>
+		</div>
+
+		<!--..........白鹭时代结束。。。。。。。。。。。。。-->
+<!---banner--->
+		<div class="content">
+			<div class="container">
+				<div class="row" style="margin-top: 30px;">
+					<h2 class="text-center">软件介绍</h2>
+					<p class="text-center text-muted">OUR FULL-SERIVES PROJECT</p>
+					<div class="col-md-6 col-sm-6">
+						<a href="#">
+							<div class="a1">
+								<div class="wnd">
+									<h3>Egrt Engie</h3>
+									<p>遵循HTML5标准的2D引擎及全新打造的3D引擎，灵活地满足开发者2D或3D游戏的需求，并有着极强的跨平台运行能力。</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<div class="a2">
+							<div class="wnd">
+								<h3>Egret Wing</h3>
+								<p>支持主流开发语言与技术的编辑器，通过可视化编辑，提高游戏开发效率，同时支持Node.js开发扩展插件，更好的定制化自有内容。</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+						<div class="a3">
+							<div class="wnd">
+								<h3>DragonBones</h3>
+								<p>面向设计师的动画创作平台，使用更少的美术成本制作更生动的动画效果。多语言支持，仅需一次制作即可全平台发布全球最早的2D骨骼动画解决方</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<div class="a4">
+							<div class="wnd">
+								<h3>Egret Runtime</h3>
+								<p>是一款支持3D的HTML5游戏加速器，解决低端机对HTML5标准支持不佳，体验差的弊端，可以适配不同的系统让HTML5游戏效果媲美原生游戏。 </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!---->
+
+		<!--结束-->
+		<!-- END Video Section -->
+		<!--  Section Image Background with overlay  -->
+		<!--<div class="container margin-leftright-null grey-background">
+			<div style="background:url(img/index/quote-business.jpg); height: 300px;">
+				<div class="container padding-sm">
+					<div class="row no-margin">
+						<div class="text-center text-white">
+							<h2 class="text-center text-white" style="margin-top: 130px;">我们为企业提供优质的服务</h2>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>-->
+		<!--theme2-->
+ <div class="theme2 hidden-sm hidden-xs">
+  <div class="theme2-text">
+   <h1>我们为企业提供优质的服务</h1>
+  </div>
+ </div>
+
+		<!--  END Section Image Background with overlay  -->
+		<!--  Section Testimonials  -->
+		<!--全球最强大的工作流-->
+		<!--SERCIVES-->
+		<!-- Section News -->
+		<div class="light-background">
+			<div class="container">
+				<div class="row no-margin padding-onlytop-lg">
+					<div class="col-md-12 padding-leftright-null text-center">
+						<h3 class="big margin-bottom-small" style="margin-top: 50px;">最新资讯</h3>
+					</div>
+
+					<!-- 1 -->
+					<div class="col-sm-4 col-lg-4 single-news nn">
+						<article>
+							<div class="lu" style="background-color: #FFFFFF; border: 1px #FFFFFF solid;border-radius: 10px;margin-top: 10px;">
+								<img src="img/index/news1.jpg" class="img-rounded">
+								<div class="content">
+									<h3>优秀界面：隐形的界面</h3>
+									<p>真正优秀的用户界面会被无视，而糟糕的设计则迫使用户注意界面的，而非内容。用户都是带着目的来访问网站的：买本新书、学习JQuery、与朋友分享一篇文章、发现新音乐写小说或者仅仅是寻找最近</p>
+									<span class="date">2018-6-14</span>
+								</div>
+								<a href="#" class="link"></a>
+							</div>
+						</article>
+
+					</div>
+					<!--<!-- 2 -->
+					<div class="col-sm-4  col-lg-4 single-news nn">
+						<article>
+							<div class="lu" style="background-color: #FFFFFF; border: 1px #FFFFFF solid;border-radius: 10px;margin-top: 10px;">
+								<img src="img/index/news2.jpg" class="img-rounded">
+								<div class="content">
+									<h3>设计只是一种过程</h3>
+									<p>我觉得很多设计师都有一个种通病包括我自己和身边一些设计，再说这个事情之前，我也跟一些设计师聊过，我才敢这样说这个事情。为什么呢？很多设计师，觉得看别人的作品，临摹别人的作品是一件</p>
+									<span class="date">2018-6-14</span>
+								</div>
+								<a href="#" class="link"></a>
+							</div>
+						</article>
+					</div>
+					<!--<!-- 3 -->
+					<div class="col-sm-4  col-lg-4 single-news nn">
+						<article>
+							<div class="lu" style="background-color: #FFFFFF; border: 1px #FFFFFF solid;border-radius: 10px;margin-top: 10px;">
+								<img src="img/index/news4.jpg" class="img-rounded">
+								<div class="content">
+									<h3>汇智绘美 编程未来</h3>
+									<p>“编程之美挑战赛”是面向在校学生开展的大型编程比赛，致力于为年轻开发者提供国际一流水平的开发与交流机会，鼓励他们开发潜能、通过创新方法应对现实问题。</p>
+									<span class="date">2018-6-14</span>
+								</div>
+								<a href="#" class="link"></a>
+							</div>
+						</article>
+					</div>
+				</div>
+
+				<div class="row no-margin">
+					<div class="col-md-12 padding-leftright-null">
+						<div class="ttttt">
+							<a href="/guanyu" class="btn-pro">查看更多</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--PROJECT-->
+		<!--rrrrrrrrrrrr -->
+		<div class="light-background">
+			<div class="container">
+				<div class="row no-margin padding-onlytop-lg">
+					<div class="col-md-12 padding-leftright-null text-center">
+						<h3 class="big margin-bottom-small" style="margin-top: 50px;">合作公司</h3>
+					</div>
+
+					<ul class="blocks">
+						<div class="col-md-4s">
+							<li>
+								小米
+								<div class="popup">
+									<span>
+				小米公司致力让每个人，都能享用来自中国的优质科技产品.
+			   </span>
+								</div>
+							</li>
+						</div>
+						<li>
+							360
+							<div class="popup">
+								<span>
+				<h3>360</h3>
+				奇虎360拥有360安全卫士、360安全浏览器。
+			</span>
+							</div>
+						</li>
+						<li>
+							腾讯
+							<div class="popup">
+								<span>
+				<h3>腾讯</h3>
+				腾讯多元化的服务包括：社交和QQ及微信/WeChat。
+			</span>
+							</div>
+						</li>
+						<li>
+							百度
+							<div class="popup">
+								<span>
+				<h3>百度</h3>
+				百度二字来自于南宋词人辛弃疾的一句词：众里寻他千百度。
+			</span>
+							</div>
+						</li>
+						<li>
+							猎豹
+							<div class="popup">
+								<span>
+				<h3>猎豹 </h3>
+				猎豹旗下产品覆盖Android、iOS、 Windows三大平台。
+		
+			</span>
+							</div>
+						</li>
+						<li class="text-center">
+							微软
+							<div class="popup">
+								<span>
+				<h3>微软</h3>
+				微软 目前是全球最大的电脑软件提供商。
+
+			</span>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+			<!--PROJECT-->
+			<!--qqqqqqqqqq-->
+			<div style="background:url(img/images/Choices.jpg);">
+				<div class="container" style="margin-bottom: 40px;">
+					<div>
+						<h2 class="text-center text-white" style="margin-top: 40PX;">为什么选择白鹭</h2>
+						<div class="col-md-12" style="text-align: center;margin-top: 20px;margin-bottom: 20px;">
+							<div class="col-md-6 col-xs-6">
+								<div class="pull-left" style="margin-top:10px ;">
+									<a href="#home" data-toggle="tab"><img src="img/images/Choicesnext2.png" width="100%"></a>
+								</div>
+							</div>
+							<div class="col-md-6 col-xs-6">
+								<div class="pull-right" style="margin-top:10px ;">
+									<a href="#ios1" data-toggle="tab"><img src="img/images/Choicesnext.png" width="100%"></a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div id="myTabContent" class="tab-content container" style="background-color: rgba(255,255,255,0.93); ">
+					<div class="tab-pane fade in active tu" id="home" style="margin-top: 10px;">
+						<div class="row" style=" margin-top: -10px;">
+							<div class="col-md-6 col-xs-12">
+								<div style="margin-left: -15px;"><img src="img/images/Choices3.jpg" class="img-responsive"></div>
+							</div>
+							<div class="col-md-6 hidden-xs" style="margin-top: 70px;">
+								<h1 class="text-center">全新+启程</h1>
+								<h2 class="text-center">专业的团队</h2>
+								<p class="text-center">采用直播互动课堂加录播的方式，课程界面显示PPT和板书，错过直播可以看回放，随时随地上课，不必担心错过重要知识点。</p>
+								<div class="Choicesbut">
+									<a>了解白鹭</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade tu" id="ios1" style="margin-top: 10px;  ">
+
+						<div class="row" style="margin-top: -10px; background-color: rgba(255,255,255,0.93);">
+							<div class="col-md-6 col-xs-12">
+								<div style="margin-left: -15px;"><img src="img/images/Choices1.jpg" class="img-responsive"></div>
+							</div>
+							<div class="col-md-6 hidden-xs" style="margin-top: 70px;">
+								<h1 class="text-center">经验+传承</h1>
+								<h2 class="text-center">多年经验</h2>
+								<p class="text-center">采用直播互动课堂加录播的方式，课程界面显示PPT和板书，错过直播可以看回放，随时随地上课，不必担心错过重要知识点。</p>
+								<div class="Choicesbut">
+									<a>了解白鹭</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!--胡乱想的结束-->
+<!--结尾开始-->
+		<!--<反馈留言-->
+		<section style="background:#030303;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class=" text-center">
+							<h2 class="text-white" style=" margin-top:100px ">告诉我们您的需求</h2>
+							<p class="text-white">我们将在1个工作日内回复，资料会保密处理。</p>
+						</div>
+					</div>
+				</div>
+				<div class="row" style=" margin-top:100px ">
+					<div class="col-lg-12">
+						<form>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="请输入您的QQ*">
+										<p class=" text-danger"></p>
+									</div>
+									<div class="form-group">
+										<input type="email" class="form-control" placeholder="请输入您的邮箱*">
+										<p class=" text-danger"></p>
+									</div>
+									<div class="form-group">
+										<input type="tel" class="form-control" placeholder="请输入您的联系方式*">
+										<p class=" text-danger"></p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<textarea class="form-control" style="resize: none;" rows="3" placeholder="请输入您的留言"></textarea>
+
+									</div>
+								</div>
+								<div class="col-lg-12 text-center" style=" margin-bottom:100px;margin-top: 30px; ">
+									<a href="#" class="button more">发送</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!--反馈留言结束-->
+		<!--底部-->
+		<div class="container-fluid text-center bg-black" style="padding: 10px ;">
+			<div class="row">
+				<div class="col-md-6 col-xs-12">
+					<p class="text-muted"><small>Copyright © 2014-2016 egret.com </small></p>
+				</div>
+				<div class="col-md-6 col-xs-12">
+					<p class="text-muted"><small>商务合作：bd@egret.com</small></p>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
